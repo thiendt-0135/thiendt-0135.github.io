@@ -40,7 +40,10 @@ body {
 }
 
 .header .header-content {
-  width: 1200px;
+  box-sizing: border-box;
+  width: 1600px;
+  padding-right: 170px;
+  padding-left: 215px;
   margin: auto;
 }
 
@@ -65,6 +68,7 @@ body {
   position: absolute;
   z-index: 1;
   display: none;
+  outline: 0px;
   top: 100%;
   width: 200px;
   height: 30px;
@@ -97,7 +101,7 @@ body {
 .menu ul li {
   font-size: 16px;
   display: inline-block;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .menu ul li a {
@@ -500,7 +504,7 @@ body {
 }
 
 .content .item-content .date {
-  font-family: Muli;
+  font-family: Muli-Regular;
   width: 100px;
   height: 55px;
   font-size: 20px;
