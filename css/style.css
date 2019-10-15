@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Muli-ExtraBold';
+  src: url("../font/Muli-ExtraBold.ttf");
+}
+@font-face {
+  font-family: 'iciel-gotham-ultra';
+  src: url("../font/iciel-gotham-ultra.otf");
+}
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url("../font/Muli-Bold.ttf");
+}
+@font-face {
+  font-family: 'Muli';
+  src: url("../font/Muli.ttf")
+}
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url("../font/Muli-Regular.ttf")
+}
+@font-face {
+  font-family: 'Myriad-Pro-Regular';
+  src: url("../font/Myriad-Pro-Regular.ttf")
+}
 body {
   margin: 0;
   padding: 0;
@@ -30,6 +54,7 @@ body {
 .menu {
   float: left;
   margin-top: 20px;
+  margin-left: 50px;
 }
 
 .search {
@@ -72,6 +97,7 @@ body {
 }
 
 .menu ul li a {
+  font-family: Myriad-Pro-Regular;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -82,6 +108,7 @@ body {
 }
 
 .slide .text-slide {
+  font-family: Muli-ExtraBold;
   position: absolute;
   width: 550px;
   top: 140px;
@@ -90,11 +117,13 @@ body {
 }
 
 .slide .text-slide .text-title {
+  font-family: Muli-Bold;
   color: #375e00;
   font-size: 20px;
 }
 
 .slide .text-slide .text-content {
+  font-family: "Muli-Regular";
   color: #929292;
   font-size: 16px;
   line-height: 26px;
@@ -109,6 +138,10 @@ body {
   color: #375e00;
   font-size: 42px;
   margin-bottom: 0px;
+}
+
+.text-title .text-title {
+  font-family: Muli-Bold;
 }
 
 .slide .text-slide h2::before {
@@ -144,8 +177,8 @@ body {
   align-items: center;
   border: 1px solid white;
   border-radius: 50%;
-  padding: 2px;
-  margin: 15px;
+  padding: 3px;
+  margin: 10px;
   flex-direction: row;
 }
 
@@ -182,6 +215,7 @@ body {
 }
 
 .about-us .title h2 {
+  font-family: iciel-gotham-ultra;
   margin-right: 30px;
   line-height: 33px;
   font-size: 30px;
@@ -194,6 +228,7 @@ body {
 
 .about-us .text {
   flex-basis: 800px;
+  margin-left: 30px;
 }
 
 .about-us .text a {
@@ -208,7 +243,8 @@ body {
 }
 
 .about-us .text h3 {
-  font-size: 20px;
+  font-family: Myriad-Pro-Regular;
+  font-size: 30px;
 }
 
 .text a {
@@ -233,6 +269,7 @@ body {
 }
 
 .new-product h3 {
+  font-family: iciel-gotham-ultra;
   margin-bottom: 0px;
 }
 
@@ -252,6 +289,7 @@ body {
 
 .item h4 {
   text-align: center;
+  font-family: Muli-ExtraBold;
 }
 
 .item .item-1 {
@@ -287,6 +325,7 @@ body {
 }
 
 .main-product .title-main-product h3 {
+  font-family: iciel-gotham-ultra;
   font-size: 36px;
   line-height: 27px;
   color: #051a2c;
@@ -311,6 +350,7 @@ body {
 }
 
 .main-product .title-main-product ul li a {
+  font-family: Muli-Regular;
   text-decoration: none;
   color: #a09f9f;
   font-size: 14px;
@@ -344,13 +384,14 @@ body {
   position: absolute;
   box-sizing: border-box;
   padding: 10px 25px;
-  background-color: #06499c;
-  opacity: 0.5;
+  background-color: #2e5f8a;
+  opacity: 0.8;
   color: white;
   top: 0px;
   height: 275px;
   width: 362.5px;
   display: none;
+  line-height: 15px;
 }
 
 .main-item1 .main-item1-detail:hover .detail-product {
@@ -376,13 +417,14 @@ body {
   position: absolute;
   box-sizing: border-box;
   padding: 10px 25px;
-  background-color: #06499c;
-  opacity: 0.5;
+  background-color: #2e5f8a;
+  opacity: 0.8;
   color: white;
   top: 0px;
   height: 275px;
   width: 362.5px;
   display: none;
+  line-height: 15px;
 }
 
 .main-item2 .main-item2-detail:hover .detail-product {
@@ -397,10 +439,12 @@ body {
 }
 
 .detail-product h4 {
+  font-family: Muli-ExtraBold;
   font-size: 20px;
 }
 
 .detail-product p {
+  font-family: Muli-Regular;
   font-size: 13px;
 }
 
@@ -414,6 +458,7 @@ body {
 }
 
 .news .title {
+  font-family: iciel-gotham-ultra;
   text-transform: uppercase;
   font-size: 36px;
   line-height: 27px;
@@ -433,16 +478,23 @@ body {
 }
 
 .content .item-content .date {
+  font-family: Muli-Regular;
   width: 100px;
-  height: 50px;
+  height: 55px;
+  font-size: 20px;
   background-color: #051a2c;
   color: white;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 12px;
   box-sizing: border-box;
   float: left;
   margin-right: 10px;
   margin-top: 25px;
+}
+
+.content .item-content .date .format-text {
+  font-size: 13px;
+ /* font-family: Muli; */
 }
 
 .item-content .text-title a {
@@ -452,6 +504,10 @@ body {
   font-weight: bold;
   line-height: 26px;
 }
+
+/* .item-content-title {
+  font-family: Muli-Bold;
+} */
 
 .item-content-title:hover .date {
   background: #268bdb;
@@ -471,6 +527,10 @@ body {
 .item-content-title {
   margin-top: 20px;
   padding-top: 15px;
+}
+
+.item-content-title .text-title{
+  font-family: Muli-bold
 }
 
 .content .text-content {
@@ -498,6 +558,7 @@ body {
 }
 
 .partner .title {
+  font-family: iciel-gotham-ultra;
   text-align: center;
   text-transform: uppercase;
   font-size: 36px;
@@ -546,6 +607,7 @@ body {
 }
 
 .container p {
+  font-family: Muli-Regular;
   font-size: 14px;
 }
 
@@ -558,6 +620,7 @@ body {
 }
 
 .information h2 {
+  font-family: Muli-ExtraBold;
   flex-grow: 2;
   margin-top: 0px;
   text-transform: uppercase;
@@ -569,6 +632,7 @@ body {
 }
 
 .product h3 {
+  font-family: Muli-ExtraBold;
   text-transform: uppercase;
 }
 
@@ -578,6 +642,7 @@ body {
 }
 
 .support h3 {
+  font-family: Muli-ExtraBold;
   text-transform: uppercase;
 }
 
@@ -640,6 +705,7 @@ body {
 .footer-end {
   background-color: #041626;
   font-size: 13px;
+  font-family: Muli-Regular;
 }
 
 /* end css footer */
