@@ -29,7 +29,6 @@ body {
 
 .wrapper {
   width: 1600px;
-  font-family: Helvetica, Arial, Tahoma, sans-serif;
 }
 
 /* css header */
@@ -76,8 +75,13 @@ body {
 
 .btn-search {
   border: 0;
+  outline : 0;
   background: none;
   color: white;
+}
+
+.btn-search:hover {
+  cursor: pointer;
 }
 
 .header-content::after {
@@ -108,7 +112,6 @@ body {
 }
 
 .slide .text-slide {
-  font-family: Muli-ExtraBold;
   position: absolute;
   width: 550px;
   top: 140px;
@@ -125,7 +128,7 @@ body {
 .slide .text-slide .text-content {
   font-family: "Muli-Regular";
   color: #929292;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
 }
 
@@ -134,6 +137,7 @@ body {
 }
 
 .slide .text-slide h2 {
+  font-family: Muli-ExtraBold;
   position: relative;
   color: #375e00;
   font-size: 42px;
@@ -206,17 +210,16 @@ body {
   width: 1200px;
   margin: auto;
   display: flex;
-  align-items: center;
 }
 
 .about-us .title {
-  display: flex;
   flex-basis: 400px;
+  margin-top: 100px;
 }
 
 .about-us .title h2 {
   font-family: iciel-gotham-ultra;
-  margin-right: 30px;
+  padding-right: 30px;
   line-height: 33px;
   font-size: 30px;
   text-transform: uppercase;
@@ -227,12 +230,14 @@ body {
 }
 
 .about-us .text {
+  display: flex;
   flex-basis: 800px;
-  margin-left: 30px;
+  margin: 60px 0px;
 }
 
-.about-us .text a {
-  font-weight: 600;
+.about-us .text .line {
+  margin-top: 9px;
+  margin-right: 30px;
 }
 
 .about-us .text p {
@@ -240,6 +245,11 @@ body {
   line-height: 27px;
   font-size: 16px;
   color: #989898;
+  margin: 30px 0px;
+}
+
+.about-us .text-content h3{
+  margin: 0px;
 }
 
 .about-us .text h3 {
@@ -247,16 +257,27 @@ body {
   font-size: 30px;
 }
 
-.text a {
+.text .text-content p {
+  font-family: Muli-Regular;
+}
+
+.text .text-content a {
+  font-family: Myriad-Pro-Regular;
   text-decoration: none;
   display: block;
   border: 3px solid;
   border-radius: 100px;
   color: #268bdb;
-  padding-top: 12px;
-  width: 120px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-top: 14px;
   text-align: center;
+  font-weight: 600;
+}
+
+.text .text-content a span{
+  margin-left: 2px;
 }
 
 /* end css about-us */
@@ -279,6 +300,7 @@ body {
   font-size: 36px;
   line-height: 140px;
   text-transform: uppercase;
+  margin-top: 0px;
 }
 
 .item {
@@ -478,7 +500,7 @@ body {
 }
 
 .content .item-content .date {
- font-family: Muli;
+  font-family: Muli;
   width: 100px;
   height: 55px;
   font-size: 20px;
@@ -493,21 +515,17 @@ body {
 }
 
 .content .item-content .date .format-text {
- font-size: 13px;
- /* font-family: Muli; */
+  font-size: 13px;
 }
 
 .item-content .text-title a {
+  font-family: Muli-Bold;
   text-decoration: none;
   color: #051a2c;
   font-size: 16px;
   font-weight: bold;
   line-height: 26px;
 }
-
-/* .item-content-title {
-  font-family: Muli-Bold;
-} */
 
 .item-content-title:hover .date {
   background: #268bdb;
@@ -530,7 +548,7 @@ body {
 }
 
 .item-content-title .text-title{
-  font-family: Muli-bold
+  font-family: Muli-bold;
 }
 
 .content .text-content {
